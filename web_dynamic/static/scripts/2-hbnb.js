@@ -22,7 +22,9 @@ $(document).ready(function() {
     fetch("http://127.0.0.1:5001/api/v1/status/")
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+            if (data.status === "OK") {
+                $('#api_status').addClass('available');
+            }
         })
         .catch(err => {
             console.error(err);

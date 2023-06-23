@@ -12,14 +12,20 @@ header .logo {
     width: calc(100% - 70px);
 }
 
-header #api_status {
+/* the two methods works the same */
+/* .available {
+    background-color: #ff545f !important;
+} */
+
+
+#api_status.available {
+    background-color: #ff545f;
+}
+
+#api_status {
     background-color: #cccccc;
     height: 40px;
     width: 40px;
     border-radius: 100%;
     align-self: center;
-}
-
-header .available {
-    background-color: #ff545f;
 }
